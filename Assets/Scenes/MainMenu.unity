@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 269520943}
   - component: {fileID: 269520942}
   - component: {fileID: 269520945}
+  - component: {fileID: 269520946}
   m_Layer: 5
   m_Name: Jugar
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: -1
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -203,16 +204,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 2d88be484ceebbd4bbbe5d560b750851, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: set_name
-        m_Mode: 5
+      - m_Target: {fileID: 1632223284}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: Jugar
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MenuManager.PlayGame()
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &269520943
@@ -350,6 +351,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &269520946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269520940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacb8a8d6939c8f4b97df079d28f2319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &363368395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1264,7 @@ GameObject:
   - component: {fileID: 1632223282}
   - component: {fileID: 1632223281}
   - component: {fileID: 1632223280}
+  - component: {fileID: 1632223284}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1344,6 +1358,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1632223284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632223279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d88be484ceebbd4bbbe5d560b750851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2082190411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1511,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2082190415}
   - {fileID: 1632223283}
   - {fileID: 763622643}
-  - {fileID: 2082190415}
